@@ -1,0 +1,18 @@
+site_name: Azure Professional Services SOPs
+theme:
+  name: material
+  palette:
+    primary: indigo
+nav:
+  - Home: index.md
+  - Networking: networking/
+  - AVD: avd/
+  - Security: security/
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed
+  - tables
+  - pymdownx.superfences
+repo_url: https://github.com/chetanp201/azure-sops
