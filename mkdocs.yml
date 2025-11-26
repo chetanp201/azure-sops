@@ -3,16 +3,23 @@ theme:
   name: material
   palette:
     primary: indigo
+  features:
+    - search
+    - navigation.tabs
+    - navigation.top
+
 nav:
   - Home: index.md
-  - Networking: networking/
-  - AVD: avd/
-  - Security: security/
+  - Networking:
+      - Hub & Spoke Topology: networking/sop-virtual-networking-hub-spoke.md
+
 plugins:
   - search
+
 markdown_extensions:
   - admonition
-  - pymdownx.tabbed
   - tables
+  - pymdownx.tabbed
   - pymdownx.superfences
+
 repo_url: https://github.com/chetanp201/azure-sops
