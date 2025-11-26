@@ -1,25 +1,66 @@
-site_name: Azure Professional Services SOPs
+site_name: Azure Professional Services SOP Portal
+site_description: Standard Operating Procedures for Azure Professional Services
+site_url: https://chetanp201.github.io/azure-sops
+repo_url: https://github.com/chetanp201/azure-sops
+repo_name: chetanp201/azure-sops
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   palette:
-    primary: indigo
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   features:
-    - search
     - navigation.tabs
+    - navigation.sections
+    - navigation.expand
     - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: false
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
 
 nav:
   - Home: index.md
   - Networking:
-      - Hub & Spoke Topology: networking/sop-virtual-networking-hub-spoke.md
-
-plugins:
-  - search
-
-markdown_extensions:
-  - admonition
-  - tables
-  - pymdownx.tabbed
-  - pymdownx.superfences
-
-repo_url: https://github.com/chetanp201/azure-sops
+    - Hub & Spoke Topology: networking/sop-virtual-networking-hub-spoke.md
+  - AVD:
+    - Host Pool + FSLogix: avd/sop-avd-host-pool-fslogix.md

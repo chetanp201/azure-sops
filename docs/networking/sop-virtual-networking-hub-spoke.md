@@ -2,6 +2,10 @@
 **Version:** 1.0 | **Valid as of:** Nov 2025  
 **Owner:** Azure Networking CoE | **Review cycle:** Every 6 months
 
+!!! info "Quick Links"
+    [:material-pencil: Edit this SOP](https://github.com/chetanp201/azure-sops/edit/main/docs/networking/sop-virtual-networking-hub-spoke.md) | 
+    [:material-clock-outline: Last Updated](#){ .git-revision-date-localized-plugin }
+
 ## Objective  
 Deploy a production-grade, CAF/WAF-aligned Hub-Spoke topology that is repeatable, secure-by-default, and policy-enforced in every customer landing zone.
 
