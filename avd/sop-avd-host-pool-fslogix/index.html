@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://chetanp201.github.io/azure-sops/networking/sop-virtual-networking-hub-spoke/">
+        <link rel="canonical" href="https://chetanp201.github.io/azure-sops/avd/sop-avd-host-pool-fslogix/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../networking/sop-virtual-networking-hub-spoke/">
       
-      
-        <link rel="next" href="../../avd/sop-avd-host-pool-fslogix/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>Hub & Spoke Topology - Azure Professional Services SOP Portal</title>
+        <title>Host Pool + FSLogix - Azure Professional Services SOP Portal</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sop-azure-virtual-networking-hub-spoke-topology" class="md-skip">
+        <a href="#sop-azure-virtual-desktop-avd-host-pool-fslogix-profile-container" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hub & Spoke Topology
+              Host Pool + FSLogix
             
           </span>
         </div>
@@ -242,13 +240,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../networking/sop-virtual-networking-hub-spoke/" class="md-tabs__link">
           
   
   
@@ -264,11 +260,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../avd/sop-avd-host-pool-fslogix/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -356,6 +354,95 @@
       
   
   
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Networking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/sop-virtual-networking-hub-spoke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hub & Spoke Topology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -377,17 +464,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Networking
+    AVD
   
 
     
@@ -398,12 +485,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Networking
+    AVD
   
 
           </label>
@@ -432,7 +519,7 @@
   <span class="md-ellipsis">
     
   
-    Hub & Spoke Topology
+    Host Pool + FSLogix
   
 
     
@@ -450,7 +537,7 @@
   <span class="md-ellipsis">
     
   
-    Hub & Spoke Topology
+    Host Pool + FSLogix
   
 
     
@@ -553,6 +640,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fslogix-configuration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FSLogix Configuration Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FSLogix Configuration Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registry-settings-group-policy-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registry Settings (Group Policy Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-cache-configuration-ha-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Cache Configuration (HA Scenarios)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rollback-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -563,99 +700,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AVD
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    AVD
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../avd/sop-avd-host-pool-fslogix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Host Pool + FSLogix
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -772,10 +870,110 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fslogix-configuration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FSLogix Configuration Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FSLogix Configuration Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registry-settings-group-policy-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registry Settings (Group Policy Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-cache-configuration-ha-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Cache Configuration (HA Scenarios)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rollback-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
         Rollback Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnostic Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
       
     </span>
   </a>
@@ -802,24 +1000,26 @@
   
 
 
-<h1 id="sop-azure-virtual-networking-hub-spoke-topology">SOP – Azure Virtual Networking (Hub-Spoke Topology)<a class="headerlink" href="#sop-azure-virtual-networking-hub-spoke-topology" title="Permanent link">&para;</a></h1>
+<h1 id="sop-azure-virtual-desktop-avd-host-pool-fslogix-profile-container">SOP – Azure Virtual Desktop (AVD) Host Pool + FSLogix Profile Container<a class="headerlink" href="#sop-azure-virtual-desktop-avd-host-pool-fslogix-profile-container" title="Permanent link">&para;</a></h1>
 <p><strong>Version:</strong> 1.0 | <strong>Valid as of:</strong> Nov 2025<br />
-<strong>Owner:</strong> Azure Networking CoE | <strong>Review cycle:</strong> Every 6 months</p>
+<strong>Owner:</strong> Azure AVD CoE | <strong>Review cycle:</strong> Every 6 months</p>
 <div class="admonition info">
 <p class="admonition-title">Quick Links</p>
-<p><a href="https://github.com/chetanp201/azure-sops/edit/main/docs/networking/sop-virtual-networking-hub-spoke.md">:material-pencil: Edit this SOP</a> | 
+<p><a href="https://github.com/chetanp201/azure-sops/edit/main/docs/avd/sop-avd-host-pool-fslogix.md">:material-pencil: Edit this SOP</a> | 
 <a class="git-revision-date-localized-plugin" href="#">:material-clock-outline: Last Updated</a></p>
 </div>
 <h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">&para;</a></h2>
-<p>Deploy a production-grade, CAF/WAF-aligned Hub-Spoke topology that is repeatable, secure-by-default, and policy-enforced in every customer landing zone.</p>
+<p>Deploy a production-grade Azure Virtual Desktop (AVD) host pool with FSLogix profile containers, ensuring high availability, performance, and security for enterprise virtual desktop infrastructure.</p>
 <h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>Mandatory for ALL new Azure environments and any brownfield refactoring.</p>
+<p>Mandatory for ALL new AVD deployments. Applies to pooled and personal host pools. Includes FSLogix profile container setup with Azure Files Premium.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Subscription placed under correct Management Group (Connectivity or Landing Zones)  </li>
-<li>Azure Policy “Deploy Landing Zone – Networking” initiative assigned  </li>
-<li>Engineer has Contributor + User Access Administrator on the subscription  </li>
-<li>IaC templates from official repo (Bicep or Terraform)</li>
+<li>Azure subscription with appropriate permissions (Contributor + User Access Administrator)</li>
+<li>Azure AD (Entra ID) tenant with AVD licensing (Windows 10/11 Enterprise E3/E5 or Microsoft 365)</li>
+<li>Network connectivity (Hub-Spoke topology recommended per Networking SOP)</li>
+<li>Storage account with Premium File Shares enabled</li>
+<li>Domain controller accessible (on-premises or Azure AD DS)</li>
+<li>AVD service principal or user with "Desktop Virtualization Contributor" role</li>
 </ul>
 <h2 id="step-by-step-deployment">Step-by-Step Deployment<a class="headerlink" href="#step-by-step-deployment" title="Permanent link">&para;</a></h2>
 <table>
@@ -834,80 +1034,122 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Deploy Hub VNet</td>
-<td>Bicep/Terraform module</td>
-<td>Address space: e.g., 10.100.0.0/22<br>Subnets: AzureBastion, AzureFirewall, GatewaySubnet (optional), JumpBox</td>
+<td>Create Resource Group</td>
+<td>Portal/CLI/PowerShell</td>
+<td>Naming: <code>rg-&lt;env&gt;-avd-&lt;region&gt;-001</code></td>
 </tr>
 <tr>
 <td>2</td>
-<td>Deploy Azure Firewall Premium + Firewall buổi Policy</td>
-<td>Same module</td>
-<td>Firewall Healthy, default DNAT/SNAT/App rules in place</td>
+<td>Deploy Azure Files Premium Account</td>
+<td>Portal or Bicep/Terraform</td>
+<td>Performance: Premium<br>Redundancy: ZRS (recommended) or LRS<br>Enable large file shares</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Enable DDoS Standard Protection Plan</td>
-<td>Portal or IaC</td>
-<td>Plan linked to Hub VNet</td>
+<td>Create File Share for FSLogix Profiles</td>
+<td>Azure Portal</td>
+<td>Share name: <code>fslogix-profiles</code><br>Quota: Based on user count (e.g., 5TB for 500 users)</td>
 </tr>
 <tr>
 <td>4</td>
-<td>Deploy Spoke VNet(s)</td>
-<td>Spoke module</td>
-<td>Minimum subnets: Application (/24), Database (/24), PrivateEndpoints (/26)</td>
+<td>Configure Azure Files Active Directory Authentication</td>
+<td>Azure AD DS or On-Prem AD</td>
+<td>Domain join storage account<br>Assign share permissions (Storage File Data SMB Share Elevated Contributor)</td>
 </tr>
 <tr>
 <td>5</td>
-<td>VNet Peering (bidirectional)</td>
-<td>Automatic in module</td>
-<td>Status = Connected both directions<br>Allow forwarded traffic = Yes<br>Use remote gateways = Yes (hub side)</td>
+<td>Create AVD Workspace</td>
+<td>Portal/CLI/PowerShell</td>
+<td>Naming: <code>wkspc-&lt;env&gt;-avd-&lt;region&gt;-001</code><br>Location: Same region as host pool</td>
 </tr>
 <tr>
 <td>6</td>
-<td>Route Tables &amp; UDRs</td>
-<td>Automatic</td>
-<td>0.0.0.0/0 → AzureFirewall private IP on all spoke subnets<br>RFC1918 propagated if ER/VPN present</td>
+<td>Create AVD Host Pool</td>
+<td>Portal/CLI/PowerShell</td>
+<td>Pool type: Pooled or Personal<br>Load balancing: Breadth-first or Depth-first<br>Max session limit: 10 (pooled) or 1 (personal)</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Private DNS Resolver (or DNS forwarders) in Hub</td>
-<td>Module</td>
-<td>All spokes use Hub resolver</td>
+<td>Register Session Host VMs</td>
+<td>ARM Template/Bicep/Terraform</td>
+<td>Windows 10/11 Enterprise multi-session or Windows Server 2022<br>Domain join required<br>Install AVD agent + bootloader</td>
 </tr>
 <tr>
 <td>8</td>
-<td>Deploy mandatory privatelink.* DNS zones &amp; VNet links</td>
-<td>Module</td>
-<td>Zones linked to Hub + all Spokes</td>
+<td>Configure FSLogix on Session Hosts</td>
+<td>Group Policy or Registry</td>
+<td>Enable FSLogix Profile Container<br>Set VHDLocations = <code>\\&lt;storage-account&gt;.file.core.windows.net\fslogix-profiles</code><br>Set VHDNamePattern = <code>%username%</code></td>
 </tr>
 <tr>
 <td>9</td>
-<td>Run Azure Policy compliance check</td>
-<td>Portal</td>
-<td>100% compliant with Networking initiative</td>
+<td>Configure FSLogix Cloud Cache (Optional)</td>
+<td>Registry/Group Policy</td>
+<td>Enable for HA scenarios<br>Primary: Azure Files<br>Secondary: Azure Files (different region) or Azure Blob</td>
 </tr>
 <tr>
 <td>10</td>
-<td>Validate effective routes &amp; NSG flow</td>
-<td>Network Watcher</td>
-<td>Traffic to internet → Firewall, PaaS → Private Endpoint</td>
+<td>Assign Users/Groups to Application Group</td>
+<td>Portal/PowerShell</td>
+<td>Create Desktop Application Group<br>Assign Entra ID users or groups<br>Validate user can access AVD feed</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Configure Network Security</td>
+<td>NSG/Azure Firewall</td>
+<td>Allow RDP (3389) from authorized IPs<br>Allow SMB (445) to Azure Files<br>Block internet access (use Azure Firewall)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Enable Monitoring &amp; Diagnostics</td>
+<td>Log Analytics Workspace</td>
+<td>Enable diagnostic settings on host pool<br>Configure alerts for host health, session count, errors</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Configure Scaling Plan (Pooled)</td>
+<td>Portal/PowerShell</td>
+<td>Peak hours: Start VMs 30 min before<br>Off-peak: Shutdown after 10 min idle<br>Min/Max hosts based on capacity</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Validate User Profile Persistence</td>
+<td>Test login</td>
+<td>Log in → Create files on desktop → Log out → Log in → Verify files persist</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Run Post-Deployment Validation</td>
+<td>PowerShell/Portal</td>
+<td>All session hosts "Available"<br>Users can connect<br>FSLogix profiles created in Azure Files<br>No errors in Event Viewer</td>
 </tr>
 </tbody>
 </table>
 <h2 id="mandatory-naming-convention">Mandatory Naming Convention<a class="headerlink" href="#mandatory-naming-convention" title="Permanent link">&para;</a></h2>
-<p>vnet-<env>-hub-<region>-001
-vnet-<env>-spoke-<workload>-<region>-001
-fw-<env>-hub-<region>-001
-rt-<env>-spoke-<workload>-default-001</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rg-&lt;env&gt;-avd-&lt;region&gt;-001
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>wkspc-&lt;env&gt;-avd-&lt;region&gt;-001
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>hp-&lt;env&gt;-avd-&lt;pool-type&gt;-&lt;region&gt;-001
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>ag-&lt;env&gt;-avd-desktop-&lt;region&gt;-001
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sa&lt;env&gt;avd&lt;region&gt;001 (storage account, no hyphens)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>fslogix-profiles (file share name)
+</code></pre></div>
 <h2 id="post-deployment-checklist-copy-into-ticket">Post-Deployment Checklist (copy into ticket)<a class="headerlink" href="#post-deployment-checklist-copy-into-ticket" title="Permanent link">&para;</a></h2>
 <ul>
-<li>[ ] Hub &amp; Spoke VNets created  </li>
-<li>[ ] Azure Firewall Healthy  </li>
-<li>[ ] Peerings Connected both directions  </li>
-<li>[ ] 0.0.0.0/0 → Firewall on all spokes  </li>
-<li>[ ] Private DNS zones linked to all VNets  </li>
-<li>[ ] Azure Policy = 100% compliant  </li>
-<li>[ ] Topology diagram updated in repo  </li>
+<li>[ ] Resource Group created with correct naming</li>
+<li>[ ] Azure Files Premium account deployed (ZRS recommended)</li>
+<li>[ ] File share created with appropriate quota</li>
+<li>[ ] Azure Files AD authentication configured</li>
+<li>[ ] AVD Workspace created</li>
+<li>[ ] AVD Host Pool created (pooled or personal)</li>
+<li>[ ] Session Host VMs deployed and registered (minimum 2 for HA)</li>
+<li>[ ] FSLogix installed and configured on all session hosts</li>
+<li>[ ] FSLogix registry keys set (VHDLocations, VHDNamePattern)</li>
+<li>[ ] Users/groups assigned to Application Group</li>
+<li>[ ] Network security rules configured (NSG/Azure Firewall)</li>
+<li>[ ] Log Analytics workspace connected</li>
+<li>[ ] Scaling plan configured (if pooled)</li>
+<li>[ ] User profile persistence validated</li>
+<li>[ ] Monitoring alerts configured</li>
+<li>[ ] Documentation updated</li>
 <li>[ ] Customer sign-off obtained</li>
 </ul>
 <h2 id="approved-variations-need-architect-approval">Approved Variations (need architect approval)<a class="headerlink" href="#approved-variations-need-architect-approval" title="Permanent link">&para;</a></h2>
@@ -921,29 +1163,96 @@ rt-<env>-spoke-<workload>-default-001</p>
 </thead>
 <tbody>
 <tr>
-<td>Third-party NVA (Palo Alto, etc.)</td>
+<td>Azure NetApp Files for profiles</td>
 <td>Yes</td>
-<td>Replace AzFW module</td>
+<td>Higher performance, higher cost. Use for &gt;1000 users</td>
 </tr>
 <tr>
-<td>Multi-region connectivity</td>
+<td>FSLogix without Cloud Cache</td>
 <td>Yes</td>
-<td>Global peering + regional firewalls</td>
+<td>Single region only. Not recommended for HA</td>
 </tr>
 <tr>
-<td>Existing ExpressRoute/VPN</td>
+<td>Personal host pools</td>
 <td>Yes</td>
-<td>Add GatewaySubnet + BGP propagation</td>
+<td>1:1 user-to-VM mapping. Higher cost, better isolation</td>
+</tr>
+<tr>
+<td>Azure AD Domain Services (AAD DS)</td>
+<td>Yes</td>
+<td>If no on-premises AD. Limited to 5,000 objects</td>
+</tr>
+<tr>
+<td>Azure Files Standard (not Premium)</td>
+<td>No</td>
+<td>Insufficient IOPS for profile containers</td>
+</tr>
+<tr>
+<td>Third-party profile solutions (Citrix, etc.)</td>
+<td>Yes</td>
+<td>Requires architect approval and migration plan</td>
 </tr>
 </tbody>
 </table>
+<h2 id="fslogix-configuration-details">FSLogix Configuration Details<a class="headerlink" href="#fslogix-configuration-details" title="Permanent link">&para;</a></h2>
+<h3 id="registry-settings-group-policy-recommended">Registry Settings (Group Policy Recommended)<a class="headerlink" href="#registry-settings-group-policy-recommended" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>HKLM\SOFTWARE\FSLogix\Profiles
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  Enabled = 1 (DWORD)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  VHDLocations = \\&lt;storage-account&gt;.file.core.windows.net\fslogix-profiles
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  VHDNamePattern = %username%
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  DeleteLocalProfileWhenVHDShouldApply = 1
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  FlipFlopProfileDirectoryName = 1
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  PreventLoginWithFailure = 1
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  ProfileType = 0 (0=Profile, 1=ODFC, 2=Both)
+</code></pre></div>
+<h3 id="cloud-cache-configuration-ha-scenarios">Cloud Cache Configuration (HA Scenarios)<a class="headerlink" href="#cloud-cache-configuration-ha-scenarios" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>HKLM\SOFTWARE\FSLogix\Profiles
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  CCEnalbed = 1
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  CCDLocations = type=Azure,connectionString=&quot;DefaultEndpointsProtocol=https;AccountName=...;EndpointSuffix=core.windows.net;&quot;
+</code></pre></div>
+<h2 id="performance-optimization">Performance Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Azure Files Premium</strong>: Minimum 100 GiB (provides baseline IOPS). Scale up for more IOPS</li>
+<li><strong>VHD Size</strong>: Start with 30GB per user, monitor and adjust</li>
+<li><strong>Antivirus Exclusions</strong>: Exclude FSLogix VHD files and folders on session hosts</li>
+<li><strong>Network</strong>: Ensure low latency between session hosts and Azure Files (&lt;5ms recommended)</li>
+</ul>
 <h2 id="rollback-steps">Rollback Steps<a class="headerlink" href="#rollback-steps" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Delete workload resources in spokes  </li>
-<li>Remove spoke → hub peering  </li>
-<li>Delete spoke VNet  </li>
-<li>(Full rollback) Delete subscription-level deployment</li>
+<li>Remove user assignments from Application Group</li>
+<li>Stop all session host VMs</li>
+<li>Backup FSLogix profiles from Azure Files (if needed)</li>
+<li>Delete Application Group</li>
+<li>Delete Host Pool</li>
+<li>Delete Workspace</li>
+<li>(Optional) Delete Azure Files share and storage account</li>
+<li>Delete Resource Group</li>
 </ol>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Users cannot connect</strong>: Check Application Group assignments, network connectivity, host pool status</li>
+<li><strong>Profiles not persisting</strong>: Verify FSLogix registry settings, Azure Files permissions, network connectivity</li>
+<li><strong>Slow logon</strong>: Check Azure Files IOPS, VHD size, network latency</li>
+<li><strong>Session hosts unavailable</strong>: Check VM status, domain join, AVD agent health</li>
+</ul>
+<h3 id="diagnostic-commands">Diagnostic Commands<a class="headerlink" href="#diagnostic-commands" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c"># Check FSLogix status</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">Get-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKLM:\SOFTWARE\FSLogix\Profiles&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c"># Check Azure Files connectivity</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="p">&lt;</span><span class="n">storage-account</span><span class="p">&gt;.</span><span class="n">file</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">net</span> <span class="n">-Port</span> <span class="n">445</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c"># Check AVD host pool status</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nb">Get-AzWvdHostPool</span> <span class="n">-ResourceGroupName</span> <span class="p">&lt;</span><span class="n">rg-name</span><span class="p">&gt;</span> <span class="n">-Name</span> <span class="p">&lt;</span><span class="n">host-pool-name</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.microsoft.com/azure/virtual-desktop/">Azure Virtual Desktop Documentation</a></li>
+<li><a href="https://docs.microsoft.com/fslogix/">FSLogix Documentation</a></li>
+<li><a href="https://docs.microsoft.com/azure/storage/files/storage-files-scale-targets">Azure Files Performance</a></li>
+<li><a href="https://docs.microsoft.com/azure/virtual-desktop/architecture-recommendations">AVD Architecture Best Practices</a></li>
+</ul>
 
 
 
@@ -976,7 +1285,7 @@ rt-<env>-spoke-<workload>-default-001</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 26, 2025 18:28:35 UTC">November 26, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 26, 2025 18:50:03 UTC">November 26, 2025</span>
   </span>
 
     
